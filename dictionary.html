@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Dictionary</h1>
+    <div>
+      <form action="/action_page.php">
+        <label>Word:</label>
+        <input type="text" id="word">
+        <input type="submit" onclick="createDictionary()" value="Add word">
+      </form>
+    </div>
+    <div><br>
+      <label>Look for the word:</label>
+      <input id="lookFor" type="text">
+      <input type="submit" onclick="check()" value="Look for"><br>
+    </div><br>
+    <div>
+      <ul class="a" id="list"></ul>
+    </div>
+    <div>
+      <h1 id="message" style="align-content: center; color: darkolivegreen;"></h1>
+    </div>
+  </body>
+</html>
